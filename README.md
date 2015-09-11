@@ -1,5 +1,11 @@
 # csci2961 blog
 
+## lab 2
+
+1. done
+2. Adding a license to your project adds a guarantee on the freedoms that your program offers. Depending on the restrictiveness of the license and whether the license is even open source or not, the program might offer more or less freedoms. In addition, if you don't add a license to your project, it defaults to the most restrictive license, ie one that offers no freedom to end users.
+3. A project that has no licenses makes no guarantees about what it actually requires of the end user. For example, it might require compliance of the terms set forth by a
+
 ## lab 1
 
 1. done
