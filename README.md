@@ -1,5 +1,18 @@
 # csci2961 blog
 
+## lab 3
+### part 1
+
+1. https://github.com/darkmeep/exercise01
+4. ![](http://i.imgur.com/envtE1s.png)
+    ![](http://i.imgur.com/bl0XcBg.png)
+
+### part 2
+4. ![](http://i.imgur.com/JHC0fwd.png)
+
+### part 3
+4. ![](https://github.com/darkmeep/courseproject)
+
 ## lab 2
 
 1. done
