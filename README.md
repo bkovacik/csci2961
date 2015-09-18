@@ -7,10 +7,10 @@
 3. A project that has no licenses makes no guarantees about what it actually requires of the end user. For example, it might require compliance of the terms set forth by a software whose use isn't free. The license is also subject to retroactive changes that the user would have to agree to to continue using the software.
 4. I agree that the Gopher project failed because of a lack of support. The open thinking did not apply to Gopher because it required some groups to pay for the service. While it was arguably a better service, it did not receive as much support as it needed because it was not an open system, which ultimately led to its failure.
 5. The Sailfish OS most likely chose a non-Open Source license because it intends to create a meritocracy of developers such that not every developer can develop for the platform; only the ones that are good and serious.
-6. done
+6. Apache
 7. done
 8. done
-9. 
+9. I'd like to learn about the GLASS stack. We'd probably use the Apache license, as that is the license we chose for step 6.
 
 ## lab 1
 
