@@ -11,7 +11,7 @@
 4. ![](http://i.imgur.com/JHC0fwd.png)
 
 ### part 3
-4. ![](https://github.com/darkmeep/courseproject)
+4. https://github.com/darkmeep/courseproject
 
 ## lab 2
 
