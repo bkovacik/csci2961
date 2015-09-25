@@ -1,5 +1,19 @@
 # csci2961 blog
 
+## lab 4
+
+I changed a line because it felt awkward to read.
+
+It is important to maintain good documentation so that new or inexperienced users can attempt to solve problems that they encounter by themselves. This reduces the load on the developer themselves by reducing their need to solve problems that could easily be placed in documentation.
+
+Proprietary software is probably better for most users who specialize in a field that isn't computer science. They want out-of-the-box functionality and are willing to sacrifice customizability in order to get the job done. Often, proprietary software is offered in a bundle of some sort and guarantees that these pieces of software will work with each other, while open source might have to be mixed and matched to create a functional bundle. A company might be more inclined to something like this because it requires less setup and might have licensing that they need as a for-profit business.
+
+Open source is better for rapid, crowd-sourced development. It is generally cheaper of cost and can be useful for those users who are willing to go the extra step to get the software working if needed. It might offer better technical help depending on the community that is responsible for its development as well. A personal user might be more inclined to use open source software because they can contribute back to its development and because licensing might not matter to them as much.
+
+If I were starting a company, I'd want to use proprietary software for the reasons mentioned above. If I were doing a side project, I might still want to use proprietary software, depending on the application and the availability of an open source application that fulfills my needs. If not, then naturally I would use open source.
+
+https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=203338
+
 ## lab 3
 ### part 1
 
