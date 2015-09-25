@@ -4,7 +4,7 @@
 
 I changed a line because it felt awkward to read.
 
-It is important to maintain good documentation so that new or inexperienced users can attempt to solve problems that they encounter by themselves. This reduces the load on the developer themselves by reducing their need to solve problems that could easily be placed in documentation.
+It is important to maintain good documentation so that new or inexperienced users can attempt to solve problems that they encounter by themselves. This reduces the load on the developer themselves by reducing their need to provide steps to solve problems that could easily be placed in documentation.
 
 Proprietary software is probably better for most users who specialize in a field that isn't computer science. They want out-of-the-box functionality and are willing to sacrifice customizability in order to get the job done. Often, proprietary software is offered in a bundle of some sort and guarantees that these pieces of software will work with each other, while open source might have to be mixed and matched to create a functional bundle. A company might be more inclined to something like this because it requires less setup and might have licensing that they need as a for-profit business.
 
