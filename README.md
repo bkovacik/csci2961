@@ -2,145 +2,132 @@
 
 ## lab 5
 1.
-CMakeList.txt
+cmake .
 ```
-cmake_minimum_required (VERSION 2.6)
-project (Tutorial)
-
-# The version number.
-set (Tutorial_VERSION_MAJOR 1)
-set (Tutorial_VERSION_MINOR 0)
-
-# configure a header file to pass some of the CMake settings
-# to the source code
-configure_file (
-  "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
-  "${PROJECT_BINARY_DIR}/TutorialConfig.h"
-  )
-
-# add the binary tree to the search path for include files
-# so that we will find TutorialConfig.h
-include_directories("${PROJECT_BINARY_DIR}")
-
-# add the executable
-add_executable(Tutorial tutorial.cxx)
+-- The C compiler identification is GNU 4.9.1
+-- The CXX compiler identification is GNU 4.9.1
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ethereal/Documents/csci2961/cmaketut/step1
 ```
-TutorialConfig.h.in
+make
 ```
-// the configured options and settings for Tutorial
-#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
-#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
-```
-tutorial.cxx
-```
-// A simple program that computes the square root of a number
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include "TutorialConfig.h"
- 
-int main (int argc, char *argv[])
-{
-  if (argc < 2)
-    {
-    fprintf(stdout,"%s Version %d.%d\n",
-            argv[0],
-            Tutorial_VERSION_MAJOR,
-            Tutorial_VERSION_MINOR);
-    fprintf(stdout,"Usage: %s number\n",argv[0]);
-    return 1;
-    }
-  double inputValue = atof(argv[1]);
-  double outputValue = sqrt(inputValue);
-  fprintf(stdout,"The square root of %g is %g\n",
-          inputValue, outputValue);
-  return 0;
-}
+Scanning dependencies of target Tutorial
+[100%] Building CXX object CMakeFiles/Tutorial.dir/tutorial.cxx.o
+Linking CXX executable Tutorial
+[100%] Built target Tutorial
 ```
 2.
-MathFunctions/CMakeLists.txt
+cmake .
 ```
-add_library(MathFunctions mysqrt.cxx)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ethereal/Documents/csci2961/cmaketut/step2
 ```
-Tutorial.h.in
+make
 ```
-// the configured options and settings for Tutorial
-#define Tutorial_VERSION_MAJOR @Tutorial_VERSION_MAJOR@
-#define Tutorial_VERSION_MINOR @Tutorial_VERSION_MINOR@
-#cmakedefine USE_MYMATH
+Scanning dependencies of target MathFunctions
+[ 50%] Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
+Linking CXX static library libMathFunctions.a
+[ 50%] Built target MathFunctions
+Scanning dependencies of target Tutorial
+[100%] Building CXX object CMakeFiles/Tutorial.dir/tutorial.cxx.o
+Linking CXX executable Tutorial
+[100%] Built target Tutorial
 ```
-CMakeLists.txt
+3.
+cmake .
 ```
-cmake_minimum_required (VERSION 2.6)
-project (Tutorial)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ethereal/Documents/csci2961/cmaketut/step3
+```
+make
+```
+[ 50%] Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
+Linking CXX static library libMathFunctions.a
+[ 50%] Built target MathFunctions
+Scanning dependencies of target Tutorial
+[100%] Building CXX object CMakeFiles/Tutorial.dir/tutorial.cxx.o
+Linking CXX executable Tutorial
+[100%] Built target Tutorial
+```
+ctest .
+```
+Test project /home/ethereal/Documents/csci2961/cmaketut/step3
+    Start 1: TutorialRuns
+1/5 Test #1: TutorialRuns .....................   Passed    0.03 sec
+    Start 2: TutorialComp25
+2/5 Test #2: TutorialComp25 ...................   Passed    0.03 sec
+    Start 3: TutorialNegative
+3/5 Test #3: TutorialNegative .................   Passed    0.02 sec
+    Start 4: TutorialSmall
+4/5 Test #4: TutorialSmall ....................   Passed    0.03 sec
+    Start 5: TutorialUsage
+5/5 Test #5: TutorialUsage ....................   Passed    0.04 sec
 
-# The version number.
-set (Tutorial_VERSION_MAJOR 1)
-set (Tutorial_VERSION_MINOR 0)
+100% tests passed, 0 tests failed out of 5
 
-# should we use our own math functions?
-option (USE_MYMATH 
-        "Use tutorial provided math implementation" ON) 
-
-# configure a header file to pass some of the CMake settings
-# to the source code
-configure_file (
-  "${PROJECT_SOURCE_DIR}/TutorialConfig.h.in"
-  "${PROJECT_BINARY_DIR}/TutorialConfig.h"
-  )
-
-# add the binary tree to the search path for include files
-# so that we will find TutorialConfig.h
-include_directories("${PROJECT_BINARY_DIR}")
-
-# add the MathFunctions library?
-#
-if (USE_MYMATH)
-  include_directories ("${PROJECT_SOURCE_DIR}/MathFunctions")
-  add_subdirectory (MathFunctions)
-  set (EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
-endif (USE_MYMATH)
- 
-# add the executable
-add_executable (Tutorial tutorial.cxx)
-target_link_libraries (Tutorial MathFunctions)
+Total Test time (real) =   0.19 sec
 ```
-tutorial.cxx
+4.
+cmake .
 ```
-// A simple program that computes the square root of a number
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-#include "TutorialConfig.h"
-#ifdef USE_MYMATH
-#include "MathFunctions.h"
-#endif
- 
-int main (int argc, char *argv[])
-{
-  if (argc < 2)
-    {
-    fprintf(stdout,"%s Version %d.%d\n", argv[0],
-            Tutorial_VERSION_MAJOR,
-            Tutorial_VERSION_MINOR);
-    fprintf(stdout,"Usage: %s number\n",argv[0]);
-    return 1;
-    }
- 
-  double inputValue = atof(argv[1]);
- 
-#ifdef USE_MYMATH
-  double outputValue = mysqrt(inputValue);
-#else
-  double outputValue = sqrt(inputValue);
-#endif
- 
-  fprintf(stdout,"The square root of %g is %g\n",
-          inputValue, outputValue);
-  return 0;
-}
+-- Looking for log
+-- Looking for log - not found
+-- Looking for exp
+-- Looking for exp - not found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ethereal/Documents/csci2961/cmaketut/step4
 ```
-3. 
+make
+```
+Scanning dependencies of target MathFunctions
+[ 50%] Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
+Linking CXX static library libMathFunctions.a
+[ 50%] Built target MathFunctions
+Scanning dependencies of target Tutorial
+[100%] Building CXX object CMakeFiles/Tutorial.dir/tutorial.cxx.o
+Linking CXX executable Tutorial
+[100%] Built target Tutorial
+```
+5.
+cmake .
+```
+-- Looking for log
+-- Looking for log - not found
+-- Looking for exp
+-- Looking for exp - not found
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ethereal/Documents/csci2961/cmaketut/step5
+```
+make
+```
+Scanning dependencies of target MakeTable
+[ 25%] Building CXX object MathFunctions/CMakeFiles/MakeTable.dir/MakeTable.cxx.o
+Linking CXX executable MakeTable
+[ 25%] Built target MakeTable
+[ 50%] Generating Table.h
+Scanning dependencies of target MathFunctions
+[ 75%] Building CXX object MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o
+Linking CXX static library libMathFunctions.a
+[ 75%] Built target MathFunctions
+Scanning dependencies of target Tutorial
+[100%] Building CXX object CMakeFiles/Tutorial.dir/tutorial.cxx.o
+Linking CXX executable Tutorial
+[100%] Built target Tutorial
+```
+
 ## lab 4
 
 I changed a line because it felt awkward to read.
