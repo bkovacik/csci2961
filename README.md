@@ -127,6 +127,20 @@ Scanning dependencies of target Tutorial
 Linking CXX executable Tutorial
 [100%] Built target Tutorial
 ```
+./Tutorial 25
+```
+Computing sqrt of 25 to be 13
+Computing sqrt of 25 to be 7.46154
+Computing sqrt of 25 to be 5.40603
+Computing sqrt of 25 to be 5.01525
+Computing sqrt of 25 to be 5.00002
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+Computing sqrt of 25 to be 5
+The square root of 25 is 5
+```
 
 ## lab 4
 
