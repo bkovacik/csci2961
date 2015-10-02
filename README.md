@@ -57,7 +57,8 @@ int main (int argc, char *argv[])
   return 0;
 }
 ```
-2. MathFunctions/CMakeLists.txt
+2.
+MathFunctions/CMakeLists.txt
 ```
 add_library(MathFunctions mysqrt.cxx)
 ```
