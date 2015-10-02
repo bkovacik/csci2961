@@ -3,7 +3,7 @@
 ## lab 5
 1.
 CMakeList.txt
-'''
+```
 cmake_minimum_required (VERSION 2.6)
 project (Tutorial)
 
@@ -24,7 +24,7 @@ include_directories("${PROJECT_BINARY_DIR}")
 
 # add the executable
 add_executable(Tutorial tutorial.cxx)
-'''
+```
 
 ## lab 4
 
