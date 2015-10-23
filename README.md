@@ -2,7 +2,7 @@
 
 ## lab7
 1.
-Module
+### Module
 
 3 contributors
 
@@ -12,7 +12,7 @@ first 2e5c9debf819ed9d68fa6740cc548c1e10befa69
 
 last 15238f0efadce295b594729d4146797ba8411516
 
-EveOnlineMarketAnalysisTool
+### EveOnlineMarketAnalysisTool
 
 6 contributors
 
@@ -22,7 +22,7 @@ first 90aa5d24e1d6e1fa171d4cd17bc1bd09b7924d83
 
 last b92e13526e811df61b45fe6bee4452bddc5f4771
 
-LifeSim
+### LifeSim
 
 5 contributors
 
@@ -32,7 +32,7 @@ first 4cbdf46ef6961aabebf32a015f3991c07f124498
 
 last 735e0357e9db0fc1fcfac24d24a51aa4bb3ef7ae
 
-TrueVR
+### TrueVR
 
 1 contributor
 
@@ -42,7 +42,7 @@ first 874868628d87df69b3f6c4edef92a6a960e1470b
 
 last c7f77c61a5dba6294095e37694e2575a3c94b8a9
 
-Trellis
+### Trellis
 
 1 contributor
 
