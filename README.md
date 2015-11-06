@@ -1,5 +1,11 @@
 # csci2961 blog
 
+## lab9
+![](http://i.imgur.com/Kiy7nHV.png)
+![](http://i.imgur.com/l6bZL77.png)
+![](http://i.imgur.com/dc3FB7f.png)
+![](http://i.imgur.com/tFfqOiL.png)
+
 ## lab7
 1.
 ### Module
