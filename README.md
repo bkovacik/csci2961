@@ -6,6 +6,8 @@
 ![](http://i.imgur.com/dc3FB7f.png)
 ![](http://i.imgur.com/tFfqOiL.png)
 
+I decided I didn't want to build an entire community around my project, so I ended up joining the HabiticaOSS group. To my knowledge they haven't begun anything on their project either.
+
 ## lab7
 1.
 ### Module
