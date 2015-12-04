@@ -1,5 +1,13 @@
 # csci2961 blog
 
+## lab9
+![](http://i.imgur.com/Kiy7nHV.png)
+![](http://i.imgur.com/l6bZL77.png)
+![](http://i.imgur.com/dc3FB7f.png)
+![](http://i.imgur.com/tFfqOiL.png)
+
+I decided I didn't want to build an entire community around my project, so I ended up joining the HabiticaOSS group. To my knowledge they haven't begun anything on their project either.
+
 ## lab7
 1.
 ### Module
@@ -51,6 +59,10 @@ last c7f77c61a5dba6294095e37694e2575a3c94b8a9
 first 26fd061eb84364e2811183b54f4f145c1177cb67
 
 last f5f67398fa1cafa075b79b87f2ae2fb8c9090926
+
+##Gitstats
+
+For the most part, I want to say that Gitstats is more accurate. I don't actually know what the real stats were, but Gitstats tended to report a higher author/contributor count and a higher code count. In the case of TrueVR, the stats were identical, but this is probably because there was only a total of 35 lines of code.
 
 ## lab 5
 1.
