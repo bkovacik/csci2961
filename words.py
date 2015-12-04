@@ -24,6 +24,7 @@ __revision__ = ""
 #    Pieter Swart <swart@lanl.gov>
 #    All rights reserved.
 #    BSD license.
+#    Modified to include "scrambled" words
 
 from networkx import *
 import re
