@@ -60,9 +60,11 @@ first 26fd061eb84364e2811183b54f4f145c1177cb67
 
 last f5f67398fa1cafa075b79b87f2ae2fb8c9090926
 
-##Gitstats
+## Gitstats
 
 For the most part, I want to say that Gitstats is more accurate. I don't actually know what the real stats were, but Gitstats tended to report a higher author/contributor count and a higher code count. In the case of TrueVR, the stats were identical, but this is probably because there was only a total of 35 lines of code.
+
+I would assume that the leader in each of the projects is the one who made the initial commit.
 
 ## lab 5
 1.
