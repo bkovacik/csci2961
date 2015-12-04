@@ -8,6 +8,16 @@
 
 I decided I didn't want to build an entire community around my project, so I ended up joining the HabiticaOSS group. To my knowledge they haven't begun anything on their project either.
 
+## lab 8
+
+A standard run of the "slow" wordladder example:
+
+![](http://i.imgur.com/QONv07A.png)
+
+A modified version of the "slow" wordladder demonstrating the modified pathing:
+
+![](http://i.imgur.com/lb7L7dj.png)
+
 ## lab7
 1.
 ### Module
